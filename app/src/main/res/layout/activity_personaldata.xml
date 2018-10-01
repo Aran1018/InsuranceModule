@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/layout_TotalMoneyOfInsuranceWithSymbol"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_common" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/layout_TotalMoneyOfInsuranceWithSymbol_Money"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:src="@mipmap/nickname" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/layout_NickName"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            style="@style/setItemTextSecondLeft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/transparent"
+                            android:gravity="right|center_vertical"
+                            android:hint="@string/layout_InputNickName"
+                            android:textColorHint="@color/hint_textcolor"
+                            android:textCursorDrawable="@drawable/edittext_cursor_bg" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:background="@color/grayDividerDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:src="@mipmap/adress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/layout_AddressOfReportPost"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            style="@style/setItemTextSecondLeft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/transparent"
+                            android:gravity="right|center_vertical"
+                            android:hint="@string/layout_InputAddressOfReportPost"
+                            android:textColorHint="@color/hint_textcolor"
+                            android:textCursorDrawable="@drawable/edittext_cursor_bg" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:background="@color/grayDividerDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/askprise_item_idcard" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/layout_IDCard"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/test_first" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/test_second" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:background="@color/grayDividerDark" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@string/layout_WayOfPay"
+                android:textColor="@color/item_rightText"
+                android:textSize="@dimen/textsize_common" />
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:id="@+id/leftlayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_normal">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="80dp"
+                                android:background="@mipmap/wechatpay" />
+
+                            <RadioButton
+                                android:id="@+id/rbn_left_picture"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right|bottom"
+                                android:background="@drawable/myradio"
+                                android:button="@null"
+                                android:checked="true"
+                                android:clickable="false" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/rightlayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_normal">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="80dp"
+                                android:background="@mipmap/alipay" />
+
+                            <RadioButton
+                                android:id="@+id/rbn_right_picture"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right|bottom"
+                                android:background="@drawable/myradio"
+                                android:button="@null"
+                                android:clickable="false" />
+
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginTop="30dp"
+                android:background="#FE2B00"
+                android:text="@string/layout_SureToBuy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_buynow" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_title" />
+
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/myinsurance_item_height"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myinsurance_carlicence_height"
+        android:layout_marginLeft="@dimen/myinsurance_layout_margin"
+        android:layout_marginRight="@dimen/myinsurance_layout_margin"
+        android:layout_marginTop="@dimen/myinsurance_carlicence_margintop">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/insurance_carlicence_bg" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/myinsurance_carlicence"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_common"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/myinsurance_carlicence_marginleft"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myinsurance_insurance_height"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/myinsurance_layout_margin"
+        android:layout_marginLeft="@dimen/myinsurance_layout_margin"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/myinsurance_insurance_height"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_myinsurance_buynow"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2">
+
+                            <ImageView
+                                android:layout_width="@dimen/myinsurance_insuranceimage_height"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/myinsurance_insuranceimage_margintop"
+                                android:src="@mipmap/insurance_picc"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/myinsurance_layout_margin"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/bt_buynow"
+                                android:layout_width="@dimen/myinsurance_button_width"
+                                android:layout_height="@dimen/myinsurance_button_height"
+                                android:text="@string/myinsurance_leftbutton_buynow"
+                                android:textSize="@dimen/textsize_common"
+                                android:textColor="@color/white"
+                                android:background="@mipmap/insurance_buttonbg_orange"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/myinsurance_leftbutton_marginleft"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_myinsurance_revoke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/myinsurance_righttext_revoke"
+                            android:textSize="@dimen/textsize_common"
+                            android:textColor="@color/gray6"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_myreport"
+                android:layout_width="350dp"
+                android:layout_height="204dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/myreport_report" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:text="@string/layout_TrafficInsurance"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:text="@string/layout_MoneyOfTrafficInsurance"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/grayDividerDark" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:text="@string/layout_Tax"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:text="@string/layout_MoneyOfTax"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/grayDividerDark" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:text="@string/layout_BusinessInsurance"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:text="@string/layout_MoneyOfBusinessInsurance"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#000" />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="#000">
+
+                    <LinearLayout
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/layout_TotalMoneyOfInsurance"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_total" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/layout_TotalMoneyOfInsurance_All"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_total" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="#DADADA">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:src="@mipmap/ad_car_image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="6dp"
+                        android:textStyle="bold"
+                        android:text="@string/layout_GetRepairFund"
+                        android:textColor="#FE2B00"
+                        android:textSize="@dimen/textsize_large" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/gray2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="right"
+                            android:text="@string/layout_LearnMore"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="right"
+                                android:text="@string/layout_RepairFund"
+                                android:textSize="@dimen/textsize_total"
+                                android:textColor="#FE2B00" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="2dp"
+                                android:text="@string/layout_TextOfRepairFund"
+                                android:textColor="#FE2B00"
+                                android:textSize="@dimen/textsize_total" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:text="@string/layout_TotalMoneyOfInsurance"
+                android:textSize="@dimen/textsize_common"
+                android:textColor="@color/item_rightText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_gravity="center_vertical"
+                android:text="@string/layout_TotalMoneyOfInsurance_AfterDiscount"
+                android:textSize="@dimen/textsize_bottom_totalMoney"
+                android:textColor="@color/item_rightText" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_buynow"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:background="#FE2B00"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/tv_buynow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/layout_BuyNow"
+                android:textSize="@dimen/textsize_buynow"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/layout_title" />
+
+</FrameLayout>

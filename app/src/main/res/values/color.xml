@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用颜色定义 -->
+    <color name="gray0">#F3F7F8</color>
+    <color name="gray01">#FFEEEEEE</color>
+    <color name="gray1">#FFDDDDDD</color>
+    <color name="gray2">#FFC0C0C0</color>
+    <color name="gray3">#FF969696</color>
+    <color name="gray4">#FF808080</color>
+    <color name="gray5">#FF646464</color>
+    <color name="gray6">#FF4B4B4B</color>
+    <color name="gray7">#BEBEBE</color>
+    <color name="gray8">#ccEEEEEE</color>
+    <color name="gray9">#FF262626</color>
+    <color name="gray10">#66969696</color>
+    <color name="gray11">#9E9D9D</color>
+    <color name="gray12">#CFCFCF</color>
+    <color name="province_line_border">#8e8484</color>
+    <color name="gray_contact_divider">#e7ebec</color>
+    <color name="hint_textcolor">#6D6D6D</color>
+    <color name="addfriend_textcolor">#A8A8A8</color>
+    <color name="divided_region">@color/gray0</color>
+    <color name="annular_circle_color">#787878</color>
+    <color name="item_pressed">#F0F0F0</color>
+    <color name="inputBar_bg">#F9F9F9</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="red1">#FF6666</color>
+    <color name="red2">#FF0000</color>
+    <color name="red3">#cf0404</color>
+    <color name="delete_red">#D5181F</color>
+    <color name="yellow1">#FFCC33</color>
+    <color name="green1">#CCFF33</color>
+    <color name="green2">#66FF33</color>
+    <color name="green3">#7EC94C</color>
+    <color name="green4">#1CB025</color>
+    <color name="blue1">#33CCFF</color>
+    <color name="blue2">#1DA6E6</color>
+    <color name="blue3">#1D85D6</color>
+
+    <color name="violet1">#CA2586</color>
+    <color name="violet1_dark">#9A2586</color>
+    <color name="violet2">#8756AD</color>
+    <color name="violet2_dark">#6A56AD</color>
+
+
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent55">#55000000</color>
+    <color name="transparent60">#60000000</color>
+    <color name="transparent80">#80000000</color>
+    <color name="transparent88">#88000000</color>
+    <color name="transparentAA">#AA000000</color>
+    <color name="custom_transparent">#7d515151</color>
+
+
+    <!-- 具体控件颜色定义，尽量引用自通用颜色 -->
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="appBackground">@color/white</color>
+    <color name="appGreen">#0BC2D4</color>
+    <color name="appGreenDark">#0bc2d4</color>
+    <color name="appGreenDark1">#20a19f</color>
+    <color name="appRed">#FF4081</color>
+    <color name="appRedDark">#cc3669</color>
+    <color name="appStatusBarBg">@color/transparent88</color>
+
+    <color name="appSearchBg">@color/gray0</color>
+    <color name="appSearchText">@color/gray4</color>
+
+    <color name="appGrayBackgroud">@color/gray0</color>
+    <color name="grayDivider">@color/appGrayBackgroud</color>
+    <color name="grayDividerDark">@color/gray2</color>
+    <color name="itemPress">@color/gray0</color>
+    <color name="itemNormal">@color/white</color>
+    <color name="itemTextColorFirst">@color/item_rightText</color>
+    <color name="itemTextColorSecon">@color/item_leftText</color>
+
+    <color name="itemSearchResultTitle">@color/black</color>
+    <color name="itemSearchResultIntroduce">@color/gray5</color>
+
+    <color name="titleBg">@color/transparent</color>
+    <color name="titleTextColor">@color/white</color>
+    <color name="com_press_translucence">@color/transparent55</color>
+
+    <color name="edit_icon_bg">#0CFFFFFF</color>
+    <color name="edit_bg">#11FFFFFF</color>
+    <color name="edit_text_hint">#CCD8D2D1</color>
+
+    <!-- 聊天 -->
+    <color name="chartMsgTextComing">@color/white</color>
+    <color name="chartMsgTextSend">@color/black</color>
+    <color name="chat_unread_bubble">#e94f4f</color>
+    <color name="chat_unread_item">#a6efefef</color>
+
+
+    <!--layout_timewheel_present_time-->
+    <color name="color_323232">#323232</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="scan_text">#ffffff</color>
+    <color name="possible_result">#c004ff00</color>
+
+    <color name="bg_horizontal_line_color">#80a3a4a7</color>
+    <color name="bg_horizontal_btn_normal">#eeeeee</color>
+    <color name="bg_horizontal_btn_selected">#70a3a4a7</color>
+
+    <color name="bg_indicator_point_normal">#D8D8D8</color>
+    <color name="bg_indicator_point_selected">#A6A6A6</color>
+
+    <color name="item_leftText">#58626e</color>
+    <color name="item_rightText">#010207</color>
+    <color name="chat_item_nickname">#4b4b4b</color>
+    <color name="group_owner_background">#e7ebec</color>
+    <color name="group_owner_textcolor">#a4a9aa</color>
+
+</resources>
