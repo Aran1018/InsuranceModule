@@ -10,8 +10,6 @@ public class AskPriseActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
-        //1
-        //2
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_askprise);
         initView();
