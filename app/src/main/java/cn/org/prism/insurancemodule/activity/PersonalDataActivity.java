@@ -55,11 +55,9 @@ public class PersonalDataActivity extends Activity {
                 case R.id.leftlayout:
                     rbn_right_picture.setChecked(false);
                     rbn_left_picture.setChecked(true);
-                    System.out.println("left");
                     break;
                 case R.id.rightlayout:
                     rbn_right_picture.setChecked(true);
-                    System.out.println("right");
                     rbn_left_picture.setChecked(false);
 
                     break;

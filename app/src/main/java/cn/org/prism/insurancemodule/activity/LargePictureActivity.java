@@ -17,9 +17,9 @@ public class LargePictureActivity extends Activity {
     }
     private void initView(){
         btn_backto_myreportactivity = findViewById(R.id.btn_backto_myreportactivity);
-        btn_backto_myreportactivity.setOnClickListener(new MyClickListenr());
+        btn_backto_myreportactivity.setOnClickListener(new Back());
     }
-    private class MyClickListenr implements View.OnClickListener{
+    private class Back implements View.OnClickListener{
 
         @Override
         public void onClick(View v) {
