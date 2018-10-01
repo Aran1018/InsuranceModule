@@ -9,7 +9,12 @@ import cn.org.prism.insurancemodule.widget.Title;
 public class AskPriseActivity extends Activity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
+        //1
+        //2
+        //3
+        //4
+        //5
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_askprise);
         initView();
