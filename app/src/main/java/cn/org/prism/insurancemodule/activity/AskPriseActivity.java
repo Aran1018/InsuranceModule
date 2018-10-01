@@ -12,9 +12,6 @@ public class AskPriseActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         //1
         //2
-        //3
-        //4
-        //5
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_askprise);
         initView();
