@@ -317,8 +317,8 @@
 
                         <FrameLayout
                             android:id="@+id/leftlayout"
-                            android:layout_width="140dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="137dp"
+                            android:layout_height="68dp"
                             android:layout_marginLeft="@dimen/margin_normal">
 
                             <ImageView
@@ -328,8 +328,8 @@
 
                             <RadioButton
                                 android:id="@+id/rbn_left_picture"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
                                 android:layout_gravity="right|bottom"
                                 android:background="@drawable/myradio"
                                 android:button="@null"
@@ -341,8 +341,8 @@
 
                         <FrameLayout
                             android:id="@+id/rightlayout"
-                            android:layout_width="140dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="137dp"
+                            android:layout_height="68dp"
                             android:layout_marginLeft="35dp">
 
                             <ImageView
@@ -352,8 +352,8 @@
 
                             <RadioButton
                                 android:id="@+id/rbn_right_picture"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
                                 android:layout_gravity="right|bottom"
                                 android:background="@drawable/myradio"
                                 android:button="@null"
