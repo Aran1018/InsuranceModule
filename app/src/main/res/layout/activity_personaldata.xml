@@ -167,47 +167,120 @@
                     android:layout_height="80dp"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="@dimen/margin_normal"
-                        android:layout_marginTop="10dp"
-                        android:src="@mipmap/askprise_item_idcard" />
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_marginTop="15dp"
+                      >
+                      <ImageView
+                          android:layout_width="20dp"
+                          android:layout_height="20dp"
+                          android:layout_marginLeft="@dimen/margin_normal"
+                          android:layout_marginTop="10dp"
+                          android:src="@mipmap/askprise_item_idcard" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/layout_IDCard"
-                        android:textColor="@color/item_rightText"
-                        android:textSize="@dimen/textsize_common" />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:layout_marginTop="10dp"
+                          android:text="@string/layout_IDCard"
+                          android:textColor="@color/item_rightText"
+                          android:textSize="@dimen/textsize_common" />
+                  </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <RelativeLayout
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_weight="1.2"
+                        >
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_weight="1"
-                            android:background="@mipmap/test_first" />
+                        <!--<ImageView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:layout_marginRight="20dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:background="@mipmap/test_first" />-->
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#2f353b"
+                            >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/camera"
+                                android:layout_gravity="center"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/layout_IDCard_Positive"
+                                android:textSize="10dp"
+                                android:textColor="@color/white"
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:background="@mipmap/test_second" />
+                                />
+                        </LinearLayout>
+                        </FrameLayout>
+                        <!--<ImageView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:background="@mipmap/test_second" />-->
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:background="#2f353b"
 
-                    </LinearLayout>
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@mipmap/camera"
+                                    android:layout_gravity="center"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:paddingTop="5dp"
+                                    android:text="@string/layout_IDCard_Negative"
+                                    android:textSize="10dp"
+                                    android:textColor="@color/white"
+
+                                    />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </RelativeLayout>
 
                 </LinearLayout>
 
@@ -232,28 +305,26 @@
             <RadioGroup
                 android:id="@+id/group"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+
 
                         <FrameLayout
                             android:id="@+id/leftlayout"
-                            android:layout_width="wrap_content"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/margin_normal">
 
                             <ImageView
                                 android:layout_width="130dp"
-                                android:layout_height="80dp"
-                                android:background="@mipmap/wechatpay" />
+                                android:layout_height="65dp"
+                                android:background="@mipmap/alipay" />
 
                             <RadioButton
                                 android:id="@+id/rbn_left_picture"
@@ -263,20 +334,21 @@
                                 android:background="@drawable/myradio"
                                 android:button="@null"
                                 android:checked="true"
-                                android:clickable="false" />
+                                android:clickable="false"
+
+                                />
                         </FrameLayout>
 
                         <FrameLayout
                             android:id="@+id/rightlayout"
-                            android:layout_width="wrap_content"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="@dimen/margin_normal">
+                            android:layout_marginLeft="35dp">
 
                             <ImageView
                                 android:layout_width="130dp"
-                                android:layout_height="80dp"
-                                android:background="@mipmap/alipay" />
+                                android:layout_height="65dp"
+                                android:background="@mipmap/wechatpay" />
 
                             <RadioButton
                                 android:id="@+id/rbn_right_picture"
@@ -289,7 +361,7 @@
 
                         </FrameLayout>
 
-                    </RelativeLayout>
+
 
                 </LinearLayout>
 
@@ -298,9 +370,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/margin_normal"
-                android:layout_marginRight="@dimen/margin_normal"
-                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
                 android:background="#FE2B00"
                 android:text="@string/layout_SureToBuy"
                 android:textColor="@color/white"

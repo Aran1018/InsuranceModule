@@ -60,6 +60,8 @@
     <string name="layout_AddressOfReportPost">保单邮寄地址</string>
     <string name="layout_InputAddressOfReportPost">请输入您的保单邮寄地址</string>
     <string name="layout_IDCard">身份证</string>
+    <string name="layout_IDCard_Positive">拍摄身份证正面</string>
+    <string name="layout_IDCard_Negative">拍摄身份证背面</string>
     <string name="layout_WayOfPay">请选择支付方式</string>
     <string name="layout_SureToBuy">确定购买</string>
 
