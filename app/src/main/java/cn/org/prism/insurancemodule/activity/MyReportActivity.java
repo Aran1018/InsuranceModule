@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -17,7 +19,9 @@ public class MyReportActivity extends Activity {
     private TextView tv_buynow;
     private Intent intent;
     private RelativeLayout rl_buynow;
-
+    private FrameLayout fl_myreport;
+    private FrameLayout fl_largepicture;
+    private Button btn_backto_myreportactivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +35,10 @@ public class MyReportActivity extends Activity {
         iv_myreport.setOnClickListener(new MyClickListener());
         tv_buynow = findViewById(R.id.tv_buynow);
         tv_buynow.setOnClickListener(new MyClickListener());
+        fl_myreport = findViewById(R.id.fl_myreport);
+        fl_largepicture = findViewById(R.id.fl_largepicture);
+        btn_backto_myreportactivity = findViewById(R.id.btn_backto_myreportactivity);
+        btn_backto_myreportactivity.setOnClickListener(new MyClickListener());
         initTitle();
     }
 
@@ -51,8 +59,10 @@ public class MyReportActivity extends Activity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.iv_myreport:
-                    intent = new Intent(MyReportActivity.this, LargePictureActivity.class);
-                    startActivity(intent);
+                    fl_largepicture.setVisibility(View.VISIBLE);
+                    break;
+                case R.id.btn_backto_myreportactivity:
+                    fl_largepicture.setVisibility(View.GONE);
                     break;
                 case R.id.tv_buynow:
                     intent = new Intent(MyReportActivity.this, PersonalDataActivity.class);
@@ -61,6 +71,8 @@ public class MyReportActivity extends Activity {
                 case R.id.rl_buynow:
                     Intent intent = new Intent(MyReportActivity.this, PersonalDataActivity.class);
                     startActivity(intent);
+                    break;
+
             }
         }
     }

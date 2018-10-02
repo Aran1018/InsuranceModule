@@ -50,6 +50,7 @@
     <string name="layout_TotalMoneyOfInsurance_AfterDiscount">¥4940.00</string>
     <string name="layout_BuyNow">立即购买</string>
     <string name="layout_Offer">优惠:</string>
+    <string name="layout_Sure">确定</string>
 
     <!--PersonalDataActivity-->
     <string name="titleStr_PersonalDataActivity">资料填写</string>

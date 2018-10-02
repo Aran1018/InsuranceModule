@@ -24,7 +24,7 @@ public class EditPersonalDataActivity extends Activity {
         Title title = findViewById(R.id.title);
         title.setTitleNameStr("修改资料");
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
-                .BUTTON_LEFT, R.mipmap.navigationbar_back,null);
+                .BUTTON_LEFT, R.mipmap.navigationbar_back, null);
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
                 .BUTTON_RIGHT2, R.mipmap.myinsurance_title_phone, null);
         title.mSetButtonInfo(buttonLeft);
