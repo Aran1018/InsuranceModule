@@ -38,14 +38,18 @@
     <string name="layout_MoneyOfBusinessInsurance">¥3980.00</string>
     <string name="layout_Subsidy">油卡/路游侠补贴</string>
     <string name="layout_MoneyOfSubsidy">¥1000.00</string>
-    <string name="layout_GetRepairFund">获得</string>
     <string name="layout_LearnMore">了解详情</string>
-    <string name="layout_RepairFund">¥860.00</string>
-    <string name="layout_TextOfRepairFund">维修基金</string>
+    <string name="layout_RepairFund">价值2145元</string>
+    <string name="layout_GetRepairFund">获得维修基金:</string>
+    <string name="layout_GetCommodityGift">获得商品礼包:</string>
+    <string name="layout_MoneyOfCommodityGift">价值5940元</string>
+    <string name="layout_CashOffer">现金优惠:</string>
+    <string name="layout_MoneyOfCashOffer">320元</string>
     <string name="layout_TotalMoneyOfInsurance">保费合计：</string>
     <string name="layout_TotalMoneyOfInsurance_All">¥5940.00</string>
     <string name="layout_TotalMoneyOfInsurance_AfterDiscount">¥4940.00</string>
     <string name="layout_BuyNow">立即购买</string>
+    <string name="layout_Offer">优惠:</string>
 
     <!--PersonalDataActivity-->
     <string name="titleStr_PersonalDataActivity">资料填写</string>

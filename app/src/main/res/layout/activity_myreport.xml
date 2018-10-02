@@ -6,22 +6,22 @@
     android:orientation="vertical">
 
     <ScrollView
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp"
         android:overScrollMode="never"
-        android:scrollbars="none"
-        android:layout_marginBottom="60dp">
+        android:scrollbars="none">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/iv_myreport"
-                android:layout_width="350dp"
-                android:layout_height="204dp"
+                android:layout_width="320dp"
+                android:layout_height="187dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:background="@mipmap/myreport_report" />
@@ -29,7 +29,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_normal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@color/white"
                 android:orientation="vertical">
 
@@ -143,10 +145,10 @@
                     android:background="#000">
 
                     <LinearLayout
-                        android:gravity="right"
-                        android:layout_marginRight="@dimen/margin_normal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:gravity="right">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -171,131 +173,329 @@
 
             </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_margin="@dimen/margin_normal"
-                android:background="#DADADA">
+            <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_margin="@dimen/margin_normal"-->
+            <!--android:background="#DADADA">-->
 
-                <ImageView
-                    android:layout_width="180dp"
-                    android:layout_height="80dp"
-                    android:layout_marginLeft="@dimen/margin_normal"
-                    android:src="@mipmap/ad_car_image" />
+            <!--<ImageView-->
+            <!--android:layout_width="180dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_normal"-->
+            <!--android:src="@mipmap/ad_car_image" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="@dimen/margin_normal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="@string/layout_GetRepairFund"-->
+            <!--android:textColor="#FE2B00"-->
+            <!--android:textSize="@dimen/textsize_large" />-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="38dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@color/gray2" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:text="@string/layout_LearnMore"-->
+            <!--android:textSize="@dimen/textsize_small" />-->
+
+            <!--<LinearLayout-->
+
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:text="@string/layout_RepairFund"-->
+            <!--android:textSize="@dimen/textsize_total"-->
+            <!--android:textColor="#FE2B00" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:text="@string/layout_TextOfRepairFund"-->
+            <!--android:textColor="#FE2B00"-->
+            <!--android:textSize="@dimen/textsize_total" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</FrameLayout>-->
+
+
+            <!--新效果图-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/layout_Offer"
+                android:textColor="#FE2B00"
+                android:textSize="@dimen/textsize_total"
+                />
+
+            <RadioGroup
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="@dimen/margin_normal">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:layout_marginTop="6dp"
-                        android:textStyle="bold"
-                        android:text="@string/layout_GetRepairFund"
-                        android:textColor="#FE2B00"
-                        android:textSize="@dimen/textsize_large" />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
 
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="38dp"
-                        android:layout_gravity="bottom"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="5dp"
-                        android:background="@color/gray2" />
-
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_gravity="right"
-                            android:text="@string/layout_LearnMore"
-                            android:textSize="@dimen/textsize_small" />
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
 
                         <LinearLayout
-
-                            android:orientation="vertical"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_gravity="right"
-                                android:text="@string/layout_RepairFund"
-                                android:textSize="@dimen/textsize_total"
-                                android:textColor="#FE2B00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="right"
-                                android:layout_marginBottom="2dp"
-                                android:text="@string/layout_TextOfRepairFund"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:text="@string/layout_GetRepairFund"
                                 android:textColor="#FE2B00"
-                                android:textSize="@dimen/textsize_total" />
+                                android:textSize="@dimen/textsize_total"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/layout_RepairFund"
+                                android:textColor="#FE2B00"
+                                android:textSize="@dimen/textsize_total"
+                                />
+
+                            <TextView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:background="@drawable/myreport_grayround"
+                                android:gravity="center"
+                                android:text="?"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
-                    </LinearLayout>
+                        <RadioButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:background="@drawable/myreport_radiobutton_selector"
+                            android:button="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/grayDividerDark" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:text="@string/layout_GetCommodityGift"
+                                android:textColor="#FE2B00"
+                                android:textSize="@dimen/textsize_total"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/layout_MoneyOfCommodityGift"
+                                android:textColor="#FE2B00"
+                                android:textSize="@dimen/textsize_total"
+                                />
+
+                            <TextView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:background="@drawable/myreport_grayround"
+                                android:gravity="center"
+                                android:text="?"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:background="@drawable/myreport_radiobutton_selector"
+                            android:button="@null" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/grayDividerDark" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:text="@string/layout_CashOffer"
+                                android:textColor="@color/item_rightText"
+                                android:textSize="@dimen/textsize_total"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/layout_MoneyOfCashOffer"
+                                android:textColor="@color/item_rightText"
+                                android:textSize="@dimen/textsize_total"
+                                />
+
+
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:background="@drawable/myreport_radiobutton_selector"
+                            android:button="@null" />
+
+
+                    </RelativeLayout>
+
 
                 </LinearLayout>
-
-            </FrameLayout>
+            </RadioGroup>
 
         </LinearLayout>
 
     </ScrollView>
 
-    <FrameLayout
-        android:background="@color/white"
-        android:layout_marginTop="@dimen/margin_normal"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@color/white">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_normal"
-                android:layout_gravity="center_vertical"
-                android:layout_marginTop="3dp"
-                android:text="@string/layout_TotalMoneyOfInsurance"
-                android:textSize="@dimen/textsize_common"
-                android:textColor="@color/item_rightText" />
+                android:layout_gravity="center_vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_normal"
-                android:layout_gravity="center_vertical"
-                android:text="@string/layout_TotalMoneyOfInsurance_AfterDiscount"
-                android:textSize="@dimen/textsize_bottom_totalMoney"
-                android:textColor="@color/item_rightText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:text="@string/layout_TotalMoneyOfInsurance"
+                    android:textColor="@color/item_rightText"
+                    android:textSize="@dimen/textsize_common" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/layout_TotalMoneyOfInsurance_AfterDiscount"
+                    android:textColor="@color/item_rightText"
+                    android:textSize="@dimen/textsize_bottom_totalMoney" />
+            </LinearLayout>
+
 
         </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/rl_buynow"
-            android:layout_width="138dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#FE2B00"
-            android:layout_gravity="right">
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#FE2B00">
 
             <TextView
                 android:id="@+id/tv_buynow"
@@ -303,12 +503,12 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="@string/layout_BuyNow"
-                android:textSize="@dimen/textsize_buynow"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_buynow" />
 
         </RelativeLayout>
 
-    </FrameLayout>
+    </LinearLayout>
 
     <include layout="@layout/layout_title" />
 
