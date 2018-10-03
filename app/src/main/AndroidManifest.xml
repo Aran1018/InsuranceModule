@@ -22,6 +22,9 @@
             android:name=".activity.AskPriseActivity"
             android:launchMode="singleTask" />
         <activity
+            android:name=".activity.LargePictureActivity"
+            android:launchMode="singleTask" />
+        <activity
             android:name=".activity.MyReportActivity"
             android:launchMode="singleTask" />
         <activity
