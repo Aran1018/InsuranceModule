@@ -22,23 +22,14 @@ public class MyInsuranceActivity extends Activity {
     private Button bt_continuebuy;
     private Button bt_editdata;
     private Button bt_askprise;
-    private Uri submit;
-    private Uri pay;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myinsurance);
-        getDialogPicUri();
         setTitle();
         initView();
         setOnClickListener();
-    }
-
-    private void getDialogPicUri() {
-        submit = Uri.parse("android.resource://" + getApplicationContext().getPackageName() + "/" + R.mipmap.dialog_submit_success);
-        pay = Uri.parse("android.resource://" + getApplicationContext().getPackageName() + "/" + R.mipmap.dialog_pay_success);
     }
 
     private void initView() {
@@ -84,9 +75,7 @@ public class MyInsuranceActivity extends Activity {
             @Override
             public void onClick(View v) {
                 new RouteManDialog.Builder(MyInsuranceActivity.this)
-                        .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE)
-                        .setTitle("提交成功")
-                        .setMessage("保险专员会尽快与您联系")
+                        .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE_SUBMIT_SUCCESS)
                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -108,10 +97,7 @@ public class MyInsuranceActivity extends Activity {
             @Override
             public void onClick(View v) {
                 new RouteManDialog.Builder(MyInsuranceActivity.this)
-                        .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE)
-                        .setTitle("感谢您的购买")
-                        .setMessage("维修基金已经发送到")
-                        .setMessagetwo("您的特权中心请查收")
+                        .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE_PAY_SUCCESS)
                         .setPositiveButton("查看维修基金", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

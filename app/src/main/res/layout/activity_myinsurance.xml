@@ -29,10 +29,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="20dp" />
 
-                <include layout="@layout/layout_myinsurance_item1" />
-                <include layout="@layout/layout_myinsurance_item2" />
-                <include layout="@layout/layout_myinsurance_item3" />
-                <include layout="@layout/layout_myinsurance_item4" />
+                <include layout="@layout/layout_myinsurance_alreadybuy_item" />
+                <include layout="@layout/layout_myinsurance_paysuccess_item" />
+                <include layout="@layout/layout_myinsurance_tobuy_item" />
+                <include layout="@layout/layout_myinsurance_editdata_item" />
 
             </LinearLayout>
 

@@ -24,21 +24,26 @@ import cn.org.prism.insurancemodule.R;
 
 public class RouteManDialog extends Dialog {
 
-    //test1111111
+    public RouteManDialog(Context context) {
+        super(context);
+    }
 
     public RouteManDialog(Context context, int themeResId) {
         super(context, themeResId);
     }
 
+    protected RouteManDialog(Context context, boolean cancelable,
+                             OnCancelListener cancelListener) {
+        super(context, cancelable, cancelListener);
+    }
+
     public enum DialogTheme {
-        THEME_INSURANCE
+        THEME_INSURANCE_PAY_SUCCESS,
+        THEME_INSURANCE_SUBMIT_SUCCESS,
     }
 
     public static class Builder {
         private Context context;
-        private String title;
-        private String message;
-        private String messagetwo;
         private String positiveButtonText;
         private View view;
         private OnClickListener positiveButtonClickListener;
@@ -46,21 +51,6 @@ public class RouteManDialog extends Dialog {
 
         public Builder(Context context) {
             this.context = context;
-        }
-
-        public Builder setMessage(String message) {
-            this.message = message;
-            return this;
-        }
-
-        public Builder setMessagetwo(String message) {
-            this.messagetwo = message;
-            return this;
-        }
-
-        public Builder setTitle(String title) {
-            this.title = title;
-            return this;
         }
 
         public Builder setPositiveButton(String positiveButtonText,
@@ -92,15 +82,15 @@ public class RouteManDialog extends Dialog {
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             final RouteManDialog dialog = new RouteManDialog(context, R.style.DialogTheme);
             switch (theme) {
-                case THEME_INSURANCE:
-                    layout = inflater.inflate(R.layout.layout_insurance_dialog, null);
+                case THEME_INSURANCE_PAY_SUCCESS:
+                    layout = inflater.inflate(R.layout.layout_insurance_alreadybuy__dialog, null);
+                    break;
+                case THEME_INSURANCE_SUBMIT_SUCCESS:
+                    layout = inflater.inflate(R.layout.layout_insurance_alreadybuy__dialog, null);
                     break;
             }
             dialog.addContentView(layout, new ActionBar.LayoutParams(
                     ActionBar.LayoutParams.FILL_PARENT, ActionBar.LayoutParams.WRAP_CONTENT));
-            if (title != null) {
-                ((TextView) layout.findViewById(R.id.dialog_title)).setText(title);
-            }
             if (positiveButtonText != null) {
                 ((Button) layout.findViewById(R.id.btn_dialog_ok))
                         .setText(positiveButtonText);
@@ -116,14 +106,6 @@ public class RouteManDialog extends Dialog {
             } else {
                 layout.findViewById(R.id.btn_dialog_ok).setVisibility(
                         View.GONE);
-            }
-            //添加单纯文字
-            if (message != null) {
-                ((TextView) layout.findViewById(R.id.messageone)).setText(message);
-            }
-
-            if (messagetwo != null) {
-                ((TextView) layout.findViewById(R.id.messagetwo)).setText(messagetwo);
             }
 
             dialog.setContentView(layout);

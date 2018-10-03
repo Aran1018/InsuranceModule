@@ -31,7 +31,7 @@
                     android:id="@+id/iv_dialog_pic"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/dialog_pay_success"/>
+                    android:src="@mipmap/dialog_submit_success"/>
 
             </LinearLayout>
 
@@ -46,7 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="感谢您的购买"
+                    android:text="提交成功"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/black"
                     android:textSize="18dp"/>
@@ -56,7 +56,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="维修基金已经发送到"
+                    android:text="保险专员会尽快与您联系"
                     android:layout_marginTop="5dp"
                     android:textSize="14dp"
                     android:textColor="@color/item_leftText"/>
@@ -89,7 +89,7 @@
                 android:background="@drawable/dialog_bt_bg"
                 android:gravity="center"
                 android:lines="1"
-                android:text="ok"
+                android:text="确定"
                 android:textColor="@color/white"
                 android:textSize="18dp" />
 
