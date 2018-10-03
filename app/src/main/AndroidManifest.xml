@@ -12,7 +12,11 @@
         <activity
             android:name=".activity.MyInsuranceActivity"
             android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.AskPriseActivity"
@@ -22,13 +26,7 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".activity.MyReportActivity"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>>
+            android:launchMode="singleTask" />
         <activity
             android:name=".activity.PersonalDataActivity"
             android:launchMode="singleTask" />
