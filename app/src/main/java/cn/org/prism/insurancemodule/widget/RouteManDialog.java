@@ -4,15 +4,9 @@ import android.app.ActionBar;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import cn.org.prism.insurancemodule.R;
 
@@ -86,7 +80,7 @@ public class RouteManDialog extends Dialog {
                     layout = inflater.inflate(R.layout.layout_insurance_alreadybuy__dialog, null);
                     break;
                 case THEME_INSURANCE_SUBMIT_SUCCESS:
-                    layout = inflater.inflate(R.layout.layout_insurance_alreadybuy__dialog, null);
+                    layout = inflater.inflate(R.layout.layout_insurance_submitsuccess__dialog, null);
                     break;
             }
             dialog.addContentView(layout, new ActionBar.LayoutParams(
