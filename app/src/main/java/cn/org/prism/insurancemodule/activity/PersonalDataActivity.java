@@ -25,8 +25,8 @@ public class PersonalDataActivity extends Activity {
         initTitle();
         rbn_left_picture = findViewById(R.id.rbn_left_picture);
         rbn_right_picture = findViewById(R.id.rbn_right_picture);
-        leftlayout = findViewById(R.id.leftlayout);
-        rightlayout = findViewById(R.id.rightlayout);
+        leftlayout = findViewById(R.id.fl_leftlayout);
+        rightlayout = findViewById(R.id.fl_rightlayout);
         leftlayout.setOnClickListener(new MyRadioButtonClickListener());
         rightlayout.setOnClickListener(new MyRadioButtonClickListener());
     }
@@ -51,11 +51,11 @@ public class PersonalDataActivity extends Activity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.leftlayout:
+                case R.id.fl_leftlayout:
                     rbn_right_picture.setChecked(false);
                     rbn_left_picture.setChecked(true);
                     break;
-                case R.id.rightlayout:
+                case R.id.fl_rightlayout:
                     rbn_right_picture.setChecked(true);
                     rbn_left_picture.setChecked(false);
 

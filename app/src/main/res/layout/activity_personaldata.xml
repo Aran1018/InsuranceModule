@@ -313,10 +313,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-
-
                         <FrameLayout
-                            android:id="@+id/leftlayout"
+                            android:id="@+id/fl_leftlayout"
                             android:layout_width="137dp"
                             android:layout_height="68dp"
                             android:layout_marginLeft="@dimen/margin_normal">
@@ -340,7 +338,7 @@
                         </FrameLayout>
 
                         <FrameLayout
-                            android:id="@+id/rightlayout"
+                            android:id="@+id/fl_rightlayout"
                             android:layout_width="137dp"
                             android:layout_height="68dp"
                             android:layout_marginLeft="35dp">

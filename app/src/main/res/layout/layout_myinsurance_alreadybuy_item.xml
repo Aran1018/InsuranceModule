@@ -12,11 +12,17 @@
         android:layout_marginRight="@dimen/myinsurance_layout_margin"
         android:layout_marginTop="@dimen/myinsurance_carlicence_margintop">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@mipmap/insurance_carlicence_bg" >
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/insurance_carlicence_bg"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -27,7 +33,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginLeft="@dimen/myinsurance_carlicence_marginleft"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -105,7 +111,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1.2"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:paddingTop="@dimen/myinsurance_rightbutton_paddingtop">
 
@@ -125,20 +131,27 @@
                     android:id="@+id/ll_myinsurance_callme"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.6"
+                    android:layout_weight="0.7"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="@string/myinsurance_righttext_callus"
                         android:textSize="@dimen/textsize_common"
                         android:textColor="@color/gray6"/>
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+
             </LinearLayout>
+
 
         </LinearLayout>
 

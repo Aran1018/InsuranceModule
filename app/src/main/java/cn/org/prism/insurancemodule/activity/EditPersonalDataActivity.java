@@ -2,6 +2,9 @@ package cn.org.prism.insurancemodule.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.RadioButton;
 
 import cn.org.prism.insurancemodule.R;
 import cn.org.prism.insurancemodule.widget.Title;
@@ -13,11 +16,6 @@ public class EditPersonalDataActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_personal_data);
         initTitle();
-        initView();
-    }
-
-    private void initView() {
-
     }
 
     private void initTitle() {
@@ -31,3 +29,4 @@ public class EditPersonalDataActivity extends Activity {
         title.setButtonInfo(buttonRight);
     }
 }
+
