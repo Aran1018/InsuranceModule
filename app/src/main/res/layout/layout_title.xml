@@ -35,7 +35,7 @@
 
     <LinearLayout
         android:id="@+id/titleBackLayout"
-        android:layout_width="@dimen/com_me_img_head_height_width"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center|left"
         android:minWidth="@dimen/com_title_height"
@@ -59,6 +59,28 @@
             android:text="@string/mePersonalCenter"
             android:textColor="@color/titleTextColor"
             android:textSize="@dimen/com_title_lateral_size" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/titleRight2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:color="@color/selector_titletext_themelight"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:textSize="@dimen/com_title_lateral_size"-->
+            <!--android:visibility="gone" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/titleRight"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:color="@color/selector_titletext_themelight"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:textSize="@dimen/com_title_lateral_size" />-->
     </LinearLayout>
 
     <LinearLayout
