@@ -63,8 +63,8 @@ public class InsuranceWithFragmentActivity extends Activity {
                     finish();
             }
         });
-        title.mSetButtonInfo(buttonLeft);
-        title.mSetButtonInfo(buttonRight);
+        title.setButtonInfo(buttonLeft);
+        title.setButtonInfo(buttonRight);
     }
     private void setDefaultFragment(){
         FragmentManager ff = getFragmentManager();

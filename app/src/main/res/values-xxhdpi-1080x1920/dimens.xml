@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--layout_title-->
+    <dimen name="com_title_height">50dp</dimen>
+    <dimen name="com_title_size">20dp</dimen>
+    <dimen name="com_title_lateral_size">18dp</dimen>
+    <dimen name="com_title_icon_size">24dp</dimen>
+    <dimen name="com_title_Righticon_size">26dp</dimen>
+    <dimen name="com_title_icon_ll_size">54dp</dimen>
+    <dimen name="com_title_padding">2.5dp</dimen>
+    <dimen name="com_title_margin_left">9dp</dimen>
+
+    <dimen name="com_me_img_head_height_width">63dp</dimen>
+
+</resources>

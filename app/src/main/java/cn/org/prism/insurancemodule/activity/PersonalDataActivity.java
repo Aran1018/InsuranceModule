@@ -11,7 +11,6 @@ import cn.org.prism.insurancemodule.widget.Title;
 
 
 public class PersonalDataActivity extends Activity {
-    private Title title;
     private RadioButton rbn_left_picture;
     private RadioButton rbn_right_picture;
     private FrameLayout leftlayout;
@@ -32,7 +31,7 @@ public class PersonalDataActivity extends Activity {
         rightlayout.setOnClickListener(new MyRadioButtonClickListener());
     }
     private void initTitle(){
-        title = findViewById(R.id.title);
+        Title title = findViewById(R.id.title);
         title.setTitleNameStr(getString(R.string.titleStr_MyReportActivity));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
                 .BUTTON_LEFT, R.drawable.selector_btn_titleback, null);
@@ -45,8 +44,8 @@ public class PersonalDataActivity extends Activity {
                     finish();
             }
         });
-        title.mSetButtonInfo(buttonLeft);
-        title.mSetButtonInfo(buttonRight);
+        title.setButtonInfo(buttonLeft);
+        title.setButtonInfo(buttonRight);
     }
     public class MyRadioButtonClickListener implements View.OnClickListener {
         @Override

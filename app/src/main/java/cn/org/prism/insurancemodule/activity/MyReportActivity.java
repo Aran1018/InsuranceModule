@@ -14,7 +14,6 @@ import cn.org.prism.insurancemodule.R;
 import cn.org.prism.insurancemodule.widget.Title;
 
 public class MyReportActivity extends Activity {
-    private Title title;
     private ImageView iv_myreport;
     private TextView tv_buynow;
     private Intent intent;
@@ -43,14 +42,14 @@ public class MyReportActivity extends Activity {
     }
 
     private void initTitle() {
-        title = findViewById(R.id.title);
+        Title title = findViewById(R.id.title);
         title.setTitleNameStr(getString(R.string.titleStr_MyReportActivity));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
                 .BUTTON_LEFT, 0, getString(R.string.titleStr_BackFromMyReportActivity));
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
                 .BUTTON_RIGHT1, R.mipmap.myinsurance_title_phone, null);
-        title.mSetButtonInfo(buttonLeft);
-        title.mSetButtonInfo(buttonRight);
+        title.setButtonInfo(buttonLeft);
+        title.setButtonInfo(buttonRight);
     }
 
     private class MyClickListener implements View.OnClickListener {

@@ -1,11 +1,11 @@
 package cn.org.prism.insurancemodule.widget;
 
-
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -25,9 +25,9 @@ public class Title extends RelativeLayout{
     private boolean isShowTitle = true;
     public static final int GONE = 8;
     public static final int VISIBLE = 0;
-
     private View titleDivider = null;//分隔线
     private boolean isShowDivider = true;//是否显示分隔线
+    private ProgressBar pbTitlePending;
 
     private ButtonViewHolder buttonHolderLeft = new ButtonViewHolder(false, BUTTON_LEFT);
     private ButtonViewHolder buttonHolderRight1 = new ButtonViewHolder(false, BUTTON_RIGHT1);
@@ -82,11 +82,13 @@ public class Title extends RelativeLayout{
 
         refreshButtonShow(new ButtonViewHolder[]{buttonHolderLeft, buttonHolderRight1, buttonHolderRight2});
 
-        refreshTheme(Theme.THEME_LIGHT);
+        refreshTheme(TitleTheme.THEME_LIGHT);
 
         if(null != onFinishCustomLayout){
             onFinishCustomLayout.onFinishCustomLayout(titleCustomLayoutAear, titleCustomView);
         }
+
+        pbTitlePending = findViewById(R.id.pb_title_pending);
     }
 
     public void setTitleNameRes(int resId){
@@ -109,6 +111,14 @@ public class Title extends RelativeLayout{
             titleName.setVisibility(View.VISIBLE);
         } else {
             titleName.setVisibility(View.GONE);
+        }
+    }
+
+    public void setTitlePending(boolean pending) {
+        if (pending) {
+            pbTitlePending.setVisibility(View.VISIBLE);
+        } else {
+            pbTitlePending.setVisibility(View.GONE);
         }
     }
 
@@ -154,40 +164,29 @@ public class Title extends RelativeLayout{
         }
         return null;
     }
-    public enum Theme{
-        THEME_TRANSLATE,//主题_透明
+    public enum TitleTheme {
+        THEME_TRANSLATE,//主题_透明白分割线
         THEME_LIGHT,//主题_明亮，背景是浅色
         THEME_DARK,//主题_黑色，背景是深色
         THEME_TRANSLATE_NODIVIDER,//主题_透明无分割线
         THEME_TRANSLATE_GRAYDIVIDER;//主题_灰无分割线
-
     }
-
-
-//    public static final int THEME_TRANSLATE = 1;//主题_透明
-//    public static final int THEME_LIGHT     = 2;//主题_明亮，背景是浅色
-//    public static final int THEME_DARK      = 3;//主题_黑色，背景是深色
-//    public static final int THEME_TRANSLATE_NODIVIDER =4;//主题_透明无分割线
-//    private int theme  = THEME_LIGHT;
 
 
     /**
      * 设置主题
-     * @param theme
+     * @param titleTheme
      */
-    public void setTheme(Theme theme){
-        refreshTheme(theme);
+    public void setTheme(TitleTheme titleTheme){
+        refreshTheme(titleTheme);
     }
 
-    private void refreshTheme(Theme theme){
-        switch (theme){
+    private void refreshTheme(TitleTheme titleTheme){
+        switch (titleTheme){
             case THEME_TRANSLATE:
                 if(titleName != null){
-                    titleName.setTextColor(Color.BLACK);
+                    titleName.setTextColor(Color.WHITE);
                 }
-                /*buttonHolderLeft.text.setTextColor(Color.WHITE);
-                buttonHolderRight1.text.setTextColor(Color.WHITE);
-                buttonHolderRight2.text.setTextColor(Color.WHITE);*/
                 buttonHolderLeft.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
                 buttonHolderRight1.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
                 buttonHolderRight2.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
@@ -196,13 +195,21 @@ public class Title extends RelativeLayout{
                 this.setBackgroundResource(android.R.color.transparent);
                 break;
 
+            case THEME_TRANSLATE_GRAYDIVIDER:
+                if(titleName != null){
+                    titleName.setTextColor(Color.WHITE);
+                }
+                buttonHolderLeft.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
+                buttonHolderRight1.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
+                buttonHolderRight2.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
+                titleDivider.setBackgroundResource(R.color.grayDividerDark);
+
+                this.setBackgroundResource(android.R.color.transparent);
+                break;
             case THEME_LIGHT:
                 if(titleName != null){
-                    titleName.setTextColor(getResources().getColor(R.color.black));
+                    titleName.setTextColor(getResources().getColor(R.color.transparentAA));
                 }
-                /*buttonHolderLeft.text.setTextColor(Color.BLACK);
-                buttonHolderRight1.text.setTextColor(Color.BLACK);
-                buttonHolderRight2.text.setTextColor(Color.BLACK);*/
                 buttonHolderLeft.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themelight));
                 buttonHolderRight1.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themelight));
                 buttonHolderRight2.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themelight));
@@ -214,9 +221,6 @@ public class Title extends RelativeLayout{
                 if(titleName != null){
                     titleName.setTextColor(Color.WHITE);
                 }
-                /*buttonHolderLeft.text.setTextColor(Color.WHITE);
-                buttonHolderRight1.text.setTextColor(Color.WHITE);
-                buttonHolderRight2.text.setTextColor(Color.WHITE);*/
                 buttonHolderLeft.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
                 buttonHolderRight1.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
                 buttonHolderRight2.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
@@ -226,27 +230,13 @@ public class Title extends RelativeLayout{
                 break;
             case THEME_TRANSLATE_NODIVIDER:
                 if(titleName != null){
-                    titleName.setTextColor(Color.BLACK);
-                }
-                /*buttonHolderLeft.text.setTextColor(Color.WHITE);
-                buttonHolderRight1.text.setTextColor(Color.WHITE);
-                buttonHolderRight2.text.setTextColor(Color.WHITE);*/
-                buttonHolderLeft.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
-                buttonHolderRight1.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
-                buttonHolderRight2.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
-
-                titleDivider.setBackgroundResource(android.R.color.transparent);
-                this.setBackgroundResource(android.R.color.transparent);
-                break;
-            case THEME_TRANSLATE_GRAYDIVIDER:
-                if(titleName != null){
                     titleName.setTextColor(Color.WHITE);
                 }
                 buttonHolderLeft.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
                 buttonHolderRight1.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
                 buttonHolderRight2.text.setTextColor(getResources().getColorStateList(R.color.selector_titletext_themetransport));
-                titleDivider.setBackgroundResource(R.color.grayDividerDark);
 
+                titleDivider.setBackgroundResource(android.R.color.transparent);
                 this.setBackgroundResource(android.R.color.transparent);
                 break;
         }
@@ -301,7 +291,7 @@ public class Title extends RelativeLayout{
         this.onTitleButtonClickListener = onTitleButtonClickListener;
     }
 
-    public void mSetButtonInfo(ButtonInfo buttonInfo){
+    public void setButtonInfo(ButtonInfo buttonInfo){
         if(buttonInfo == null){
             return;
         }
@@ -365,7 +355,6 @@ public class Title extends RelativeLayout{
                 @Override
                 public void onClick(View v) {
                     if(null != onTitleButtonClickListener){
-
                         onTitleButtonClickListener.onClick(buttonInfo.id, ButtonViewHolder.this);
                     }
                 }
@@ -374,12 +363,12 @@ public class Title extends RelativeLayout{
     }
 
     public interface OnTitleButtonClickListener{
-        public void onClick(int id, ButtonViewHolder viewHolder);
+        void onClick(int id, ButtonViewHolder viewHolder);
     }
 
 
     public interface OnFinishCustomLayout{
-        public void onFinishCustomLayout(View customViewLayout, View customView);
+        void onFinishCustomLayout(View customViewLayout, View customView);
     }
 
 

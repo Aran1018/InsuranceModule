@@ -117,7 +117,7 @@ public class MyInsuranceActivity extends Activity {
                 .BUTTON_LEFT, R.mipmap.navigationbar_back,null);
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
                 .BUTTON_RIGHT2, 0, "历史保单");
-        title.mSetButtonInfo(buttonLeft);
-        title.mSetButtonInfo(buttonRight);
+        title.setButtonInfo(buttonLeft);
+        title.setButtonInfo(buttonRight);
     }
 }

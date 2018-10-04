@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--layout_title-->
+    <dimen name="com_title_height">39dp</dimen>
+
+    <dimen name="com_me_img_head_height_width">45dp</dimen>
+
+</resources>

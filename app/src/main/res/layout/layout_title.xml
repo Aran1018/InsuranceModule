@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <cn.org.prism.insurancemodule.widget.Title
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/title"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:background="@color/transparent">
+    android:layout_height="@dimen/com_title_height"
+    android:background="@color/titleBg">
+
+    <ProgressBar
+        android:id="@+id/pb_title_pending"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/com_item_margin_sma"
+        android:layout_marginRight="@dimen/com_item_margin_sma"
+        android:layout_toLeftOf="@+id/titleName"
+        android:layout_toStartOf="@+id/titleName"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/dialog_loading"
+        android:indeterminateOnly="true"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/titleName"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
+        android:ellipsize="end"
         android:gravity="center"
-        android:text="设置"
-        android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:maxEms="10"
+        android:maxLines="1"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/com_title_size" />
 
     <LinearLayout
         android:id="@+id/titleBackLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/com_me_img_head_height_width"
         android:layout_height="match_parent"
-        android:minWidth="37dp"
-        android:gravity="center"
+        android:gravity="center|left"
+        android:minWidth="@dimen/com_title_height"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/titleBackImg"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="5dp"
-            android:src="@drawable/selector_btn_titleback"/>
-
+            android:layout_width="@dimen/com_title_icon_size"
+            android:layout_height="@dimen/com_title_icon_size"
+            android:layout_marginLeft="@dimen/com_title_margin_left"
+            android:padding="@dimen/com_title_padding"
+            android:src="@drawable/selector_btn_titleback" />
 
         <TextView
             android:id="@+id/titleBackName"
@@ -40,83 +56,75 @@
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="个人中心"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:text="@string/mePersonalCenter"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/com_title_lateral_size" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
         android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/titleRightLayout2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:minWidth="37dp"
             android:gravity="center"
-            android:visibility="gone"
-            android:orientation="horizontal">
+            android:minWidth="@dimen/com_title_height"
+            android:orientation="horizontal"
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/titleRightImg2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="@dimen/com_title_Righticon_size"
+                android:layout_height="@dimen/com_title_Righticon_size"
                 android:layout_margin="5dp"
-                android:src="@drawable/selector_btn_titleback"/>
-
+                android:padding="@dimen/com_title_padding"
+                android:src="@drawable/selector_btn_titleback" />
 
             <TextView
                 android:id="@+id/titleRight2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
+                android:color="@color/selector_titletext_themelight"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:text="完成"
-                android:visibility="gone"
-                android:color="@color/selector_titletext_themelight"
-                android:textSize="17dp"
-                android:clickable="true"
-                />
-
+                android:textSize="@dimen/com_title_lateral_size"
+                android:visibility="gone" />
 
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/titleRightLayout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:minWidth="37dp"
             android:gravity="center"
+            android:minWidth="@dimen/com_title_height"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/titleRightImg"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="@dimen/com_title_Righticon_size"
+                android:layout_height="@dimen/com_title_Righticon_size"
                 android:layout_margin="5dp"
-                android:visibility="gone"
-                android:src="@drawable/selector_btn_titleback"/>
-
+                android:padding="@dimen/com_title_padding"
+                android:src="@drawable/selector_btn_titleback"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/titleRight"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
+                android:color="@color/selector_titletext_themelight"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:text="完成"
-                android:color="@color/selector_titletext_themelight"
-                android:textSize="17dp"
-                android:clickable="true"
-                />
+                android:textSize="@dimen/com_title_lateral_size" />
 
         </LinearLayout>
 
@@ -126,17 +134,16 @@
         android:id="@+id/titleCustomLayoutAear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
-        android:layout_toRightOf="@+id/titleBackLayout">
+        android:layout_toRightOf="@+id/titleBackLayout"
+        android:visibility="gone">
 
     </RelativeLayout>
-
 
     <View
         android:id="@+id/titleDivider"
         android:layout_width="match_parent"
         android:layout_height="0.6dp"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/white"/>
+        android:background="@android:color/white" />
 
 </cn.org.prism.insurancemodule.widget.Title>

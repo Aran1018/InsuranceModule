@@ -27,7 +27,7 @@ public class EditPersonalDataActivity extends Activity {
                 .BUTTON_LEFT, R.mipmap.navigationbar_back, null);
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
                 .BUTTON_RIGHT2, R.mipmap.myinsurance_title_phone, null);
-        title.mSetButtonInfo(buttonLeft);
-        title.mSetButtonInfo(buttonRight);
+        title.setButtonInfo(buttonLeft);
+        title.setButtonInfo(buttonRight);
     }
 }

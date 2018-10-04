@@ -25,4 +25,7 @@
     <dimen name="myinsurance_button_width">90dp</dimen>
     <dimen name="myinsurance_button_height">25dp</dimen>
 
+
+    <dimen name="com_item_margin_sma">5dp</dimen>
+
 </resources>
