@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray0"
+    >
+    <include layout="@layout/layout_title"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:id="@+id/ll_thisyearreport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="#000"
+            >
+            <TextView
+                android:id="@+id/tv_thisyearreport"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="本年保单"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_width="1px"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grayDividerDark"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/ll_histroyreport"
+            >
+            <TextView
+                android:id="@+id/tv_historyreport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="历史保单"
+                android:textColor="@color/item_rightText"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <View
+                android:layout_width="1px"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/grayDividerDark"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/ll_myoffer"
+            >
+            <TextView
+                android:id="@+id/tv_myoffer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="我的优惠"
+                android:textColor="@color/item_rightText"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayDividerDark"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    </FrameLayout>
+
+
+
+</LinearLayout>
