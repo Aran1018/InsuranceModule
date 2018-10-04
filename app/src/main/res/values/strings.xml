@@ -39,7 +39,7 @@
     <string name="layout_Subsidy">油卡/路游侠补贴</string>
     <string name="layout_MoneyOfSubsidy">¥1000.00</string>
     <string name="layout_LearnMore">了解详情</string>
-    <string name="layout_RepairFund">价值2145元</string>
+    <string name="layout_MoneyOfRepairFund">价值2145元</string>
     <string name="layout_GetRepairFund">获得维修基金:</string>
     <string name="layout_GetCommodityGift">获得商品礼包:</string>
     <string name="layout_MoneyOfCommodityGift">价值5940元</string>
@@ -65,6 +65,19 @@
     <string name="layout_IDCard_Negative">拍摄身份证背面</string>
     <string name="layout_WayOfPay">请选择支付方式</string>
     <string name="layout_SureToBuy">支付</string>
+    
+    <!--InsuranceWithFragmentActivity-->
+    <string name="titleStr_InsuranceWithFragmentActivity">我的保险</string>
+    <string name="layout_Premium">保费:</string>
+    <string name="layout_MoneyOfPremium_First">2456</string>
+    <string name="layout_MoneyOfPremium_Second">4532</string>
+    <string name="layout_MoneyOfCoupon">5940</string>
+    <string name="layout_Yuan">元</string>
+    <string name="layout_Coupon_Useful">可用</string>
+    <string name="layout_Coupon_Useless">已使用</string>
+    <string name="layout_CommodityGift">商品礼包</string>
+    <string name="layout_RepairFund">维修基金</string>
+
 
 
     <!--activity_edit_personal_data-->

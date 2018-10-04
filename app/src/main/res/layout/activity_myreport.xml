@@ -305,7 +305,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="8dp"
-                                android:text="@string/layout_RepairFund"
+                                android:text="@string/layout_MoneyOfRepairFund"
                                 android:textColor="#FE2B00"
                                 android:textSize="@dimen/textsize_total"
                                 />

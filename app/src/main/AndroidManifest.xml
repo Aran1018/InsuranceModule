@@ -21,9 +21,7 @@
         <activity
             android:name=".activity.AskPriseActivity"
             android:launchMode="singleTask" />
-        <activity
-            android:name=".activity.LargePictureActivity"
-            android:launchMode="singleTask" />
+
         <activity
             android:name=".activity.MyReportActivity"
             android:launchMode="singleTask" />
@@ -32,7 +30,11 @@
             android:launchMode="singleTask" />
         <activity android:name=".activity.EditPersonalDataActivity" />
         <activity android:name=".activity.IDCardSampleFrontActivity" />
-        <activity android:name=".activity.IDCardSampleOppositeActivity"></activity>
+        <activity android:name=".activity.IDCardSampleOppositeActivity" />
+        <activity android:name=".activity.InsuranceWithFragmentActivity"
+            android:launchMode="singleTask">
+
+        </activity>
     </application>
 
 </manifest>

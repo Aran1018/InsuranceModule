@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/coupon_red"
+        android:background="@mipmap/coupon_red"
         android:orientation="vertical">
 
         <LinearLayout
@@ -103,7 +103,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="5940"
+                                android:text="@string/layout_MoneyOfCoupon"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="35dp" />
@@ -112,7 +112,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.5"
-                                android:text="元"
+                                android:text="@string/layout_Yuan"
                                 android:textColor="@color/white" />
 
                         </LinearLayout>
@@ -132,7 +132,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="商品礼包"
+                                android:text="@string/layout_CommodityGift"
                                 android:textColor="@color/white"
                                 />
                         </LinearLayout>
@@ -184,7 +184,7 @@
                                android:layout_width="match_parent"
                                android:layout_height="match_parent"
                                android:gravity="center_horizontal"
-                               android:text="可用"
+                               android:text="@string/layout_Coupon_Useful"
                                android:textSize="17dp"
                                android:textColor="@color/white"
                                />
@@ -211,7 +211,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/coupon_gray"
+        android:background="@mipmap/coupon_gray"
         android:orientation="vertical">
 
         <LinearLayout
@@ -305,7 +305,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="5940"
+                                android:text="@string/layout_MoneyOfCoupon"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="35dp" />
@@ -314,7 +314,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.5"
-                                android:text="元"
+                                android:text="@string/layout_Yuan"
                                 android:textColor="@color/white" />
 
                         </LinearLayout>
@@ -334,7 +334,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="商品礼包"
+                                android:text="@string/layout_CommodityGift"
                                 android:textColor="@color/white"
                                 />
                         </LinearLayout>
@@ -386,7 +386,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center_horizontal"
-                                android:text="已使用"
+                                android:text="@string/layout_Coupon_Useless"
                                 android:textSize="17dp"
                                 android:textColor="@color/white"
                                 />
@@ -413,7 +413,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/coupon_blue"
+        android:background="@mipmap/coupon_blue"
         android:orientation="vertical">
 
         <LinearLayout
@@ -507,7 +507,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="5940"
+                                android:text="@string/layout_MoneyOfCoupon"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textSize="35dp" />
@@ -516,7 +516,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1.5"
-                                android:text="元"
+                                android:text="@string/layout_Yuan"
                                 android:textColor="@color/white" />
 
                         </LinearLayout>
@@ -536,7 +536,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="维修基金"
+                                android:text="@string/layout_RepairFund"
                                 android:textColor="@color/white"
                                 />
                         </LinearLayout>
@@ -588,7 +588,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center_horizontal"
-                                android:text="可用"
+                                android:text="@string/layout_Coupon_Useful"
                                 android:textSize="17dp"
                                 android:textColor="@color/white"
                                 />

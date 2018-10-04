@@ -14,6 +14,7 @@ import cn.org.prism.insurancemodule.R;
 import cn.org.prism.insurancemodule.fragment.Fragment_historyreport;
 import cn.org.prism.insurancemodule.fragment.Fragment_myoffer;
 import cn.org.prism.insurancemodule.fragment.Fragment_thisyearreport;
+import cn.org.prism.insurancemodule.widget.Title;
 
 public class InsuranceWithFragmentActivity extends Activity {
     private LinearLayout ll_thisyearreport;
@@ -25,6 +26,7 @@ public class InsuranceWithFragmentActivity extends Activity {
     private Fragment Ff = new Fragment_thisyearreport();
     private Fragment Fs = new Fragment_historyreport();
     private Fragment Ft = new Fragment_myoffer();
+    private Title title;
 
     private final int ID_FRAGMENT = R.id.fl_fragment;
     @Override
@@ -35,6 +37,7 @@ public class InsuranceWithFragmentActivity extends Activity {
         setDefaultFragment();
     }
     public void initView(){
+        initTitle();
         ll_thisyearreport = findViewById(R.id.ll_thisyearreport);
         ll_histroyreport = findViewById(R.id.ll_histroyreport);
         ll_myoffer = findViewById(R.id.ll_myoffer);
@@ -45,6 +48,23 @@ public class InsuranceWithFragmentActivity extends Activity {
         ll_histroyreport.setOnClickListener(new MyClickListener());
         ll_myoffer.setOnClickListener(new MyClickListener());
 
+    }
+    private void initTitle(){
+        title = findViewById(R.id.title);
+        title.setTitleNameStr(getString(R.string.titleStr_InsuranceWithFragmentActivity));
+        Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
+                .BUTTON_LEFT, R.drawable.selector_btn_titleback, null);
+        Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
+                .BUTTON_RIGHT1, R.mipmap.myinsurance_title_phone, null);
+        title.setOnTitleButtonClickListener(new Title.OnTitleButtonClickListener() {
+            @Override
+            public void onClick(int id, Title.ButtonViewHolder viewHolder) {
+                if (id==Title.BUTTON_LEFT)
+                    finish();
+            }
+        });
+        title.mSetButtonInfo(buttonLeft);
+        title.mSetButtonInfo(buttonRight);
     }
     private void setDefaultFragment(){
         FragmentManager ff = getFragmentManager();
