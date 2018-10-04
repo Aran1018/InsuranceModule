@@ -23,12 +23,8 @@ public class InsuranceWithFragmentActivity extends Activity {
     private TextView tv_thisyearreport;
     private TextView tv_historyreport;
     private TextView tv_myoffer;
-    private Fragment Ff = new Fragment_thisyearreport();
-    private Fragment Fs = new Fragment_historyreport();
-    private Fragment Ft = new Fragment_myoffer();
-    private Title title;
-
     private final int ID_FRAGMENT = R.id.fl_fragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +32,8 @@ public class InsuranceWithFragmentActivity extends Activity {
         initView();
         setDefaultFragment();
     }
-    public void initView(){
+
+    public void initView() {
         initTitle();
         ll_thisyearreport = findViewById(R.id.ll_thisyearreport);
         ll_histroyreport = findViewById(R.id.ll_histroyreport);
@@ -49,7 +46,9 @@ public class InsuranceWithFragmentActivity extends Activity {
         ll_myoffer.setOnClickListener(new MyClickListener());
 
     }
-    private void initTitle(){
+
+    private void initTitle() {
+        Title title;
         title = findViewById(R.id.title);
         title.setTitleNameStr(getString(R.string.titleStr_InsuranceWithFragmentActivity));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
@@ -59,42 +58,49 @@ public class InsuranceWithFragmentActivity extends Activity {
         title.setOnTitleButtonClickListener(new Title.OnTitleButtonClickListener() {
             @Override
             public void onClick(int id, Title.ButtonViewHolder viewHolder) {
-                if (id==Title.BUTTON_LEFT)
+                if (id == Title.BUTTON_LEFT)
                     finish();
             }
         });
         title.setButtonInfo(buttonLeft);
         title.setButtonInfo(buttonRight);
     }
-    private void setDefaultFragment(){
+
+    private void setDefaultFragment() {
+        Fragment Ft = new Fragment_thisyearreport();
+
         FragmentManager ff = getFragmentManager();
         android.app.FragmentTransaction transaction = ff.beginTransaction();
-        transaction.replace(R.id.fl_fragment,Ff).commit();
+        transaction.replace(R.id.fl_fragment, Ft).commit();
     }
-    private class MyClickListener implements View.OnClickListener{
+
+    private class MyClickListener implements View.OnClickListener {
 
         @SuppressLint("NewApi")
         @Override
         public void onClick(View v) {
-            switch (v.getId()){
+            switch (v.getId()) {
                 case R.id.ll_thisyearreport:
                     setLeftChecked();
                     setDefaultFragment();
                     break;
                 case R.id.ll_histroyreport:
                     setMiddleChecked();
-                    setFragment(Fs,ID_FRAGMENT);
+                    Fragment Fh = new Fragment_historyreport();
+                    setFragment(Fh, ID_FRAGMENT);
                     break;
                 case R.id.ll_myoffer:
                     setRightChecked();
-                    setFragment(Ft,ID_FRAGMENT);
+                    Fragment Fm = new Fragment_myoffer();
+                    setFragment(Fm, ID_FRAGMENT);
                     break;
 
             }
         }
     }
+
     @SuppressLint("NewApi")
-    private void setLeftChecked(){
+    private void setLeftChecked() {
         tv_historyreport.setTextColor(getColor(R.color.item_rightText));
         ll_histroyreport.setBackgroundColor(getColor(R.color.white));
         tv_myoffer.setTextColor(getColor(R.color.item_rightText));
@@ -102,8 +108,9 @@ public class InsuranceWithFragmentActivity extends Activity {
         tv_thisyearreport.setTextColor(getColor(R.color.white));
         ll_thisyearreport.setBackgroundColor(getColor(R.color.item_rightText));
     }
+
     @SuppressLint("NewApi")
-    private void setMiddleChecked(){
+    private void setMiddleChecked() {
         tv_thisyearreport.setTextColor(getColor(R.color.item_rightText));
         ll_thisyearreport.setBackgroundColor(getColor(R.color.white));
         tv_myoffer.setTextColor(getColor(R.color.item_rightText));
@@ -111,8 +118,9 @@ public class InsuranceWithFragmentActivity extends Activity {
         tv_historyreport.setTextColor(getColor(R.color.white));
         ll_histroyreport.setBackgroundColor(getColor(R.color.item_rightText));
     }
+
     @SuppressLint("NewApi")
-    private void setRightChecked(){
+    private void setRightChecked() {
         tv_thisyearreport.setTextColor(getColor(R.color.item_rightText));
         ll_thisyearreport.setBackgroundColor(getColor(R.color.white));
         tv_historyreport.setTextColor(getColor(R.color.item_rightText));
@@ -121,10 +129,10 @@ public class InsuranceWithFragmentActivity extends Activity {
         ll_myoffer.setBackgroundColor(getColor(R.color.item_rightText));
     }
 
-    private void setFragment(Fragment fragment,int id){
+    private void setFragment(Fragment fragment, int id) {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(id,fragment).commit();
+        transaction.replace(id, fragment).commit();
 
     }
 }

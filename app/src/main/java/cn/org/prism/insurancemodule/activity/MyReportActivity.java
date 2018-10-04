@@ -42,14 +42,15 @@ public class MyReportActivity extends Activity {
     }
 
     private void initTitle() {
-        Title title = findViewById(R.id.title);
+        Title title;
+        title = findViewById(R.id.title);
         title.setTitleNameStr(getString(R.string.titleStr_MyReportActivity));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
                 .BUTTON_LEFT, 0, getString(R.string.titleStr_BackFromMyReportActivity));
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
                 .BUTTON_RIGHT1, R.mipmap.myinsurance_title_phone, null);
-        title.setButtonInfo(buttonLeft);
-        title.setButtonInfo(buttonRight);
+        title.mSetButtonInfo(buttonLeft);
+        title.mSetButtonInfo(buttonRight);
     }
 
     private class MyClickListener implements View.OnClickListener {
@@ -68,7 +69,7 @@ public class MyReportActivity extends Activity {
                     startActivity(intent);
                     break;
                 case R.id.rl_buynow:
-                    Intent intent = new Intent(MyReportActivity.this, PersonalDataActivity.class);
+                    intent = new Intent(MyReportActivity.this, PersonalDataActivity.class);
                     startActivity(intent);
                     break;
 
