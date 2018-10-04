@@ -77,10 +77,10 @@ public class RouteManDialog extends Dialog {
             final RouteManDialog dialog = new RouteManDialog(context, R.style.DialogTheme);
             switch (theme) {
                 case THEME_INSURANCE_PAY_SUCCESS:
-                    layout = inflater.inflate(R.layout.layout_insurance_alreadybuy__dialog, null);
+                    layout = inflater.inflate(R.layout.layout_insurance_alreadybuy_dialog, null);
                     break;
                 case THEME_INSURANCE_SUBMIT_SUCCESS:
-                    layout = inflater.inflate(R.layout.layout_insurance_submitsuccess__dialog, null);
+                    layout = inflater.inflate(R.layout.layout_insurance_submitsuccess_dialog, null);
                     break;
             }
             dialog.addContentView(layout, new ActionBar.LayoutParams(

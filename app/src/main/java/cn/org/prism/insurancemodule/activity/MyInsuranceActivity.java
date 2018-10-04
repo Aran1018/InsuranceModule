@@ -50,17 +50,17 @@ public class MyInsuranceActivity extends Activity {
                 startActivity(intent);
             }
         });
-        bt_buynow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MyInsuranceActivity.this, MyReportActivity.class);
-                startActivity(intent);
-            }
-        });
         ll_myinsurance_editdata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MyInsuranceActivity.this, EditPersonalDataActivity.class);
+                startActivity(intent);
+            }
+        });
+        bt_buynow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyInsuranceActivity.this, MyReportActivity.class);
                 startActivity(intent);
             }
         });

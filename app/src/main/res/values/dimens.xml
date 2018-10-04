@@ -12,9 +12,9 @@
     <dimen name="margin_normal">15dp</dimen>
 
 
-    <dimen name="myinsurance_layout_margin">23dp</dimen>
+    <dimen name="myinsurance_layout_margin">20dp</dimen>
     <dimen name="myinsurance_leftbutton_marginleft">18dp</dimen>
-    <dimen name="myinsurance_item_height">180dp</dimen>
+    <dimen name="myinsurance_item_height">170dp</dimen>
     <dimen name="myinsurance_carlicence_height">25dp</dimen>
     <dimen name="myinsurance_carlicence_margintop">10dp</dimen>
     <dimen name="myinsurance_carlicence_marginleft">10dp</dimen>

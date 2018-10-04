@@ -313,10 +313,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-
-
                         <FrameLayout
-                            android:id="@+id/fl_alipay"
+                            android:id="@+id/fl_leftlayout"
                             android:layout_width="137dp"
                             android:layout_height="68dp"
                             android:layout_marginLeft="@dimen/margin_normal">
@@ -327,7 +325,7 @@
                                 android:background="@mipmap/alipay" />
 
                             <RadioButton
-                                android:id="@+id/rbn_alipay"
+                                android:id="@+id/rbn_left_picture"
                                 android:layout_width="15dp"
                                 android:layout_height="15dp"
                                 android:layout_gravity="right|bottom"
@@ -340,7 +338,7 @@
                         </FrameLayout>
 
                         <FrameLayout
-                            android:id="@+id/fl_wechatpay"
+                            android:id="@+id/fl_rightlayout"
                             android:layout_width="137dp"
                             android:layout_height="68dp"
                             android:layout_marginLeft="35dp">
@@ -351,7 +349,7 @@
                                 android:background="@mipmap/wechatpay" />
 
                             <RadioButton
-                                android:id="@+id/rbn_wechatpay"
+                                android:id="@+id/rbn_right_picture"
                                 android:layout_width="15dp"
                                 android:layout_height="15dp"
                                 android:layout_gravity="right|bottom"
