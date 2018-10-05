@@ -4,14 +4,12 @@
     <dimen name="textsize_small">11dp</dimen>
     <dimen name="textsize_total">16dp</dimen>
     <dimen name="textsize_bottom_totalMoney">21dp</dimen>
-    <!--获得-->
     <dimen name="textsize_large">38dp</dimen>
-    <!--立即购买-->
     <dimen name="textsize_buynow">18dp</dimen>
-
     <dimen name="margin_normal">15dp</dimen>
 
 
+    <!--activity_myinsurance-->
     <dimen name="myinsurance_layout_margin">20dp</dimen>
     <dimen name="myinsurance_leftbutton_marginleft">18dp</dimen>
     <dimen name="myinsurance_item_height">170dp</dimen>
@@ -25,7 +23,21 @@
     <dimen name="myinsurance_button_width">90dp</dimen>
     <dimen name="myinsurance_button_height">25dp</dimen>
 
+    <!--activity_picinsurancekind-->
+    <dimen name="whiteitem_height">40dp</dimen>
+    <dimen name="grayitem_height">50dp</dimen>
+    <dimen name="imageview_pickpoint_width">13dp</dimen>
+    <dimen name="imageview_list_width">20dp</dimen>
+    <dimen name="textview_marginleft">5dp</dimen>
+    <dimen name="button_margin">30dp</dimen>
 
+    <!--activity_askprise-->
+    <dimen name="z">30dp</dimen>
+
+
+
+
+    <!---->
     <dimen name="com_item_margin_sma">5dp</dimen>
 
 </resources>

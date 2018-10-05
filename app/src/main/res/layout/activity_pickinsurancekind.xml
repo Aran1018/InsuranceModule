@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray0">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grayitem_height"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal">
+
+                <ImageView
+                    android:layout_width="@dimen/imageview_list_width"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/askprise_item_list"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/askprise_tv_insurancekind"
+                    android:textColor="@color/item_leftText"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/textview_marginleft"
+                    android:textSize="@dimen/textsize_common"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/whiteitem_height"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_pick"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/payunscientific"
+                        android:textColor="@color/item_rightText"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/textsize_common"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/whiteitem_height"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal">
+
+                <View
+                    android:layout_width="@dimen/imageview_pickpoint_width"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/business_insurance"
+                    android:layout_marginLeft="@dimen/textview_marginleft"
+                    android:textColor="@color/item_leftText"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textsize_common"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/whiteitem_height"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_notpick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/thirdresponsibility_insurance"
+                        android:textColor="@color/item_rightText"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/textsize_common"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grayitem_height"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_notpick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/thirdresponsibility_insurance_thirty"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_notpick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/thirdresponsibility_insurance_fifty"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_notpick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/thirdresponsibility_insurance_hundred"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_notpick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/carloss_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_pick"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/carstolen_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_pick"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/glassbroken_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grayitem_height"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_notpick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/madeinchina"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/imageview_pickpoint_width"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/insurance_notpick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/madeoutofchina"
+                        android:textColor="@color/item_rightText"
+                        android:textSize="@dimen/textsize_common"
+                        android:layout_marginLeft="@dimen/textview_marginleft"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_notpick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/payfornatureloss"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_pick"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/disregard_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_notpick"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/noresponsibility_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_pick"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/peopleincar_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/whiteitem_height"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/imageview_pickpoint_width"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/insurance_pick"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/scratch_insurance"
+                            android:textColor="@color/item_rightText"
+                            android:layout_marginLeft="@dimen/textview_marginleft"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/textsize_common"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDividerDark" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/grayitem_height"
+                        android:background="@color/black"
+                        android:text="@string/button_ok"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:layout_marginBottom="@dimen/button_margin"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

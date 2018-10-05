@@ -76,7 +76,7 @@ public class MyInsuranceActivity extends Activity {
             public void onClick(View v) {
                 new RouteManDialog.Builder(MyInsuranceActivity.this)
                         .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE_SUBMIT_SUCCESS)
-                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(getString(R.string.button_ok), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
@@ -98,7 +98,7 @@ public class MyInsuranceActivity extends Activity {
             public void onClick(View v) {
                 new RouteManDialog.Builder(MyInsuranceActivity.this)
                         .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE_PAY_SUCCESS)
-                        .setPositiveButton("查看维修基金", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(getString(R.string.lookup_fund), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
@@ -112,11 +112,11 @@ public class MyInsuranceActivity extends Activity {
 
     private void setTitle() {
         Title title = findViewById(R.id.title);
-        title.setTitleNameStr("我的保险");
+        title.setTitleNameStr(getString(R.string.myinsurance));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
                 .BUTTON_LEFT, R.mipmap.navigationbar_back,null);
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
-                .BUTTON_RIGHT2, 0, "历史保单");
+                .BUTTON_RIGHT2, 0, getString(R.string.insurancehistory_list));
         title.setButtonInfo(buttonLeft);
         title.setButtonInfo(buttonRight);
     }

@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">我的保险</string>
 
+    <!--Title-->
+    <string name="myinsurance">我的保险</string>
+    <string name="insurancehistory_list">历史保单</string>
+    <string name="lookup_fund">查看维修基金</string>
+    <string name="editdata">修改资料</string>
+
+
     <!--MyInsuranceActivity-->
 
     <!--activity_myinsurance-->
@@ -16,6 +23,27 @@
     <string name="myinsurance_righttext_revoke">撤销保单</string>
 
 
+    <!--PickInsuranceKindActivity-->
+
+    <!--activity_pickinsurancekind-->
+    <string name="payunscientific">交强险</string>
+    <string name="business_insurance">商业保险</string>
+    <string name="thirdresponsibility_insurance">第三者责任险</string>
+    <string name="thirdresponsibility_insurance_thirty">30万</string>
+    <string name="thirdresponsibility_insurance_fifty">50万</string>
+    <string name="thirdresponsibility_insurance_hundred">100万</string>
+    <string name="carloss_insurance">车辆损失险</string>
+    <string name="carstolen_insurance">全车盗抢险</string>
+    <string name="glassbroken_insurance">玻璃单独破损险</string>
+    <string name="madeinchina">国产车</string>
+    <string name="madeoutofchina">进口车</string>
+    <string name="payfornatureloss">自然损失险</string>
+    <string name="disregard_insurance">不计免赔险</string>
+    <string name="noresponsibility_insurance">无过责任险</string>
+    <string name="peopleincar_insurance">车上人员责任险</string>
+    <string name="scratch_insurance">车身划痕险</string>
+    <string name="button_ok">确定</string>
+
     <!--AskPriseActivity-->
 
     <!--activity_askprise-->
@@ -25,6 +53,21 @@
     <string name="askprise_tv_insurancecompany">请选择投保公司</string>
     <string name="askprise_tv_idcard">身份证</string>
     <string name="askprise_tv_insurancekind">险种选择 (建议填写)</string>
+    <string name="shot_drivelicence_front">拍摄行驶证正本</string>
+    <string name="shot_drivelicence_back">拍摄行驶证副本</string>
+
+
+    <!--EditPersonalDataActivity-->
+
+    <!--activity_edit_personal_data-->
+    <string name="editpersonaldata_tel">18941332425 (请重新填写)</string>
+    <string name="adddata">补充资料</string>
+    <string name="reupload_drivelicence_back">（请重新上传行驶证副本）</string>
+    <string name="reupload_idcard_back">（请重新上传身份证背面）</string>
+    <string name="mePersonalCenter">个人中心</string>
+    <string name="insurancecompany_picc">中国人民保险</string>
+    <string name="insurancecompany_pingan">平安保险</string>
+    <string name="insurancecompany_ab">安邦保险</string>
 
 
     <!--MyReportActivity-->
@@ -65,7 +108,7 @@
     <string name="layout_IDCard_Negative">拍摄身份证背面</string>
     <string name="layout_WayOfPay">请选择支付方式</string>
     <string name="layout_SureToBuy">支付</string>
-    
+
     <!--InsuranceWithFragmentActivity-->
     <string name="titleStr_InsuranceWithFragmentActivity">我的保险</string>
     <string name="layout_Premium">保费:</string>
@@ -78,12 +121,5 @@
     <string name="layout_CommodityGift">商品礼包</string>
     <string name="layout_RepairFund">维修基金</string>
 
-
-
-    <!--activity_edit_personal_data-->
-    <string name="editpersonaldata_tel">18941332425 (请重新填写)</string>
-    <string name="adddata">补充资料</string>
-
-    <string name="mePersonalCenter">个人中心</string>
 
 </resources>

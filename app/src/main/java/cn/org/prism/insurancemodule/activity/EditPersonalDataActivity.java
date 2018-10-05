@@ -9,6 +9,8 @@ import android.widget.RadioButton;
 import cn.org.prism.insurancemodule.R;
 import cn.org.prism.insurancemodule.widget.Title;
 
+
+/*暂时不处理该页面*/
 public class EditPersonalDataActivity extends Activity {
 
     @Override
@@ -20,7 +22,7 @@ public class EditPersonalDataActivity extends Activity {
 
     private void initTitle() {
         Title title = findViewById(R.id.title);
-        title.setTitleNameStr("修改资料");
+        title.setTitleNameStr(getString(R.string.editdata));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
                 .BUTTON_LEFT, R.mipmap.navigationbar_back, null);
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title

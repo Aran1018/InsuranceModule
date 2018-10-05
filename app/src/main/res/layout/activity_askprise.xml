@@ -150,9 +150,9 @@
                         <FrameLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="5"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
+                            android:layout_weight="5"
                             android:background="#2f353b">
 
                             <LinearLayout
@@ -174,7 +174,7 @@
                                     android:layout_marginLeft="8dp"
                                     android:layout_marginRight="8dp"
                                     android:paddingTop="5dp"
-                                    android:text="拍摄行驶证正本"
+                                    android:text="@string/shot_drivelicence_front"
                                     android:textColor="@color/white"
                                     android:textSize="10dp" />
 
@@ -189,17 +189,17 @@
 
                         <FrameLayout
                             android:layout_width="0dp"
-                            android:layout_weight="5"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:background="#2f353b" >
+                            android:layout_weight="5"
+                            android:background="#2f353b">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:orientation="vertical" >
+                                android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="20dp"
@@ -214,7 +214,7 @@
                                     android:layout_marginLeft="8dp"
                                     android:layout_marginRight="8dp"
                                     android:paddingTop="5dp"
-                                    android:text="拍摄行驶证副本"
+                                    android:text="@string/shot_drivelicence_back"
                                     android:textColor="@color/white"
                                     android:textSize="10dp" />
 
@@ -233,111 +233,134 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="110dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
                         android:text="@string/askprise_tv_insurancecompany"
                         android:textColor="@color/hint_textcolor"
-                        android:textSize="@dimen/textsize_common"
-                        android:layout_marginTop="15dp"/>
+                        android:textSize="@dimen/textsize_common" />
 
-                    <HorizontalScrollView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
 
-                            <RadioGroup
-                                android:id="@+id/group"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp">
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@mipmap/myinsurance_picc_complete"/>
 
-                                    <FrameLayout
-                                        android:id="@+id/fl_leftlayout"
-                                        android:layout_width="117dp"
-                                        android:layout_height="68dp">
+                            </RelativeLayout>
 
-                                        <ImageView
-                                            android:layout_width="110dp"
-                                            android:layout_height="65dp"
-                                            android:background="@mipmap/myinsurance_picc_complete" />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@mipmap/myreport_selected"/>
 
-                                        <RadioButton
-                                            android:id="@+id/rbn_left_picture"
-                                            android:layout_width="15dp"
-                                            android:layout_height="15dp"
-                                            android:layout_gravity="right|bottom"
-                                            android:background="@drawable/myradio"
-                                            android:button="@null"
-                                            android:checked="true"
-                                            android:clickable="false" />
+                        </RelativeLayout>
 
-                                    </FrameLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
 
-                                    <FrameLayout
-                                        android:id="@+id/fl_middlelayout"
-                                        android:layout_width="117dp"
-                                        android:layout_height="68dp"
-                                        android:layout_marginLeft="25dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp">
 
-                                        <ImageView
-                                            android:layout_width="110dp"
-                                            android:layout_height="65dp"
-                                            android:background="@mipmap/myinsurance_picc_complete" />
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@mipmap/myinsurance_picc_complete"/>
 
-                                        <RadioButton
-                                            android:id="@+id/rbn_middle_picture"
-                                            android:layout_width="15dp"
-                                            android:layout_height="15dp"
-                                            android:layout_gravity="right|bottom"
-                                            android:background="@drawable/myradio"
-                                            android:button="@null"
-                                            android:clickable="false" />
+                            </RelativeLayout>
 
-                                    </FrameLayout>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@mipmap/myreport_selected"
+                                android:visibility="gone"/>
 
-                                    <FrameLayout
-                                        android:id="@+id/fl_rightlayout"
-                                        android:layout_width="117dp"
-                                        android:layout_height="68dp"
-                                        android:layout_marginLeft="25dp">
+                        </RelativeLayout>
 
-                                        <ImageView
-                                            android:layout_width="110dp"
-                                            android:layout_height="65dp"
-                                            android:background="@mipmap/myinsurance_picc_complete" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
 
-                                        <RadioButton
-                                            android:id="@+id/rbn_right_picture"
-                                            android:layout_width="15dp"
-                                            android:layout_height="15dp"
-                                            android:layout_gravity="right|bottom"
-                                            android:background="@drawable/myradio"
-                                            android:button="@null"
-                                            android:clickable="false" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp">
 
-                                    </FrameLayout>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@mipmap/myinsurance_ab_complete"/>
 
-                                </LinearLayout>
+                            </RelativeLayout>
 
-                            </RadioGroup>
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@mipmap/myreport_selected"
+                                android:visibility="gone"/>
 
-                        </LinearLayout>
+                        </RelativeLayout>
 
-                    </HorizontalScrollView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/insurancecompany_picc"
+                        android:textColor="@color/blue1"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/insurancecompany_pingan"
+                        android:textSize="@dimen/textsize_common" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/insurancecompany_ab"
+                        android:textSize="@dimen/textsize_common" />
 
                 </LinearLayout>
 
@@ -396,9 +419,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp">
+                android:layout_marginTop="30dp">
 
                 <Button
                     android:layout_width="match_parent"

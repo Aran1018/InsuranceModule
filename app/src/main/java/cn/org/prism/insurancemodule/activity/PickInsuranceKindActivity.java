@@ -6,22 +6,18 @@ import android.os.Bundle;
 import cn.org.prism.insurancemodule.R;
 import cn.org.prism.insurancemodule.widget.Title;
 
-public class AskPriseActivity extends Activity {
+public class PickInsuranceKindActivity extends Activity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_askprise);
-        initView();
+        setContentView(R.layout.activity_pickinsurancekind);
+        setTitle();
     }
 
-    private void initView() {
-        initTitle();
-    }
-
-    private void initTitle() {
+    private void setTitle() {
         Title title = findViewById(R.id.title);
-        title.setTitleNameStr(getString(R.string.myinsurance_button_queryprise));
+        title.setTitleNameStr(getString(R.string.myinsurance));
         Title.ButtonInfo buttonLeft = new Title.ButtonInfo(true, Title
                 .BUTTON_LEFT, R.mipmap.navigationbar_back,null);
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title

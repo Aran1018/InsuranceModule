@@ -40,10 +40,10 @@
                 android:id="@+id/bt_askprise"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_margin="@dimen/myinsurance_layout_margin"
                 android:background="@mipmap/myinsurance_button_normal"
                 android:text="@string/myinsurance_button_queryprise"
-                android:textColor="@color/white"
-                android:layout_margin="@dimen/myinsurance_layout_margin"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
