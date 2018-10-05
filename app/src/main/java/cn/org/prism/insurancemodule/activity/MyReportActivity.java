@@ -49,8 +49,8 @@ public class MyReportActivity extends Activity {
                 .BUTTON_LEFT, 0, getString(R.string.titleStr_BackFromMyReportActivity));
         Title.ButtonInfo buttonRight = new Title.ButtonInfo(true, Title
                 .BUTTON_RIGHT1, R.mipmap.myinsurance_title_phone, null);
-        title.mSetButtonInfo(buttonLeft);
-        title.mSetButtonInfo(buttonRight);
+        title.setButtonInfo(buttonLeft);
+        title.setButtonInfo(buttonRight);
     }
 
     private class MyClickListener implements View.OnClickListener {

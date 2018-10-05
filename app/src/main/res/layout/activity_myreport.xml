@@ -310,16 +310,24 @@
                                 android:textSize="@dimen/textsize_total"
                                 />
 
-                            <TextView
+                            <!--<TextView-->
+                                <!--android:layout_width="16dp"-->
+                                <!--android:layout_height="16dp"-->
+                                <!--android:layout_marginLeft="@dimen/margin_normal"-->
+                                <!--android:background="@drawable/myreport_grayround"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="?"-->
+                                <!--android:textColor="@color/white"-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:textStyle="bold" />-->
+                            <ImageView
                                 android:layout_width="16dp"
                                 android:layout_height="16dp"
-                                android:layout_marginLeft="@dimen/margin_normal"
-                                android:background="@drawable/myreport_grayround"
-                                android:gravity="center"
-                                android:text="?"
-                                android:textColor="@color/white"
-                                android:textSize="12dp"
-                                android:textStyle="bold" />
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/questionmark"
+                                android:layout_gravity="center"
+                                />
+
 
                         </LinearLayout>
 
@@ -368,16 +376,14 @@
                                 android:textSize="@dimen/textsize_total"
                                 />
 
-                            <TextView
+                            <ImageView
                                 android:layout_width="16dp"
                                 android:layout_height="16dp"
-                                android:layout_marginLeft="@dimen/margin_normal"
-                                android:background="@drawable/myreport_grayround"
-                                android:gravity="center"
-                                android:text="?"
-                                android:textColor="@color/white"
-                                android:textSize="12dp"
-                                android:textStyle="bold" />
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/questionmark"
+                                android:layout_gravity="center"
+                                />
+
 
                         </LinearLayout>
 
