@@ -116,7 +116,6 @@
                     android:paddingTop="@dimen/myinsurance_rightbutton_paddingtop">
 
                     <Button
-                        android:id="@+id/bt_continuebuy"
                         android:layout_width="@dimen/myinsurance_button_width"
                         android:layout_height="@dimen/myinsurance_button_height"
                         android:text="@string/myinsurance_rightbutton_text"
@@ -128,7 +127,6 @@
                 </RelativeLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll_myinsurance_callme"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.7"

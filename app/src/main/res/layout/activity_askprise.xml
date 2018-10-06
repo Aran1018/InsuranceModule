@@ -393,6 +393,7 @@
                         android:textSize="@dimen/textsize_common" />
 
                     <LinearLayout
+                        android:id="@+id/ll_choosekind"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -424,6 +425,7 @@
                 android:layout_marginTop="30dp">
 
                 <Button
+                    android:id="@+id/bt_toaskprise"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@mipmap/myinsurance_button_normal"

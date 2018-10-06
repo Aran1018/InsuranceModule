@@ -2,17 +2,36 @@ package cn.org.prism.insurancemodule.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import cn.org.prism.insurancemodule.R;
 import cn.org.prism.insurancemodule.widget.Title;
 
 public class PickInsuranceKindActivity extends Activity {
 
+    private Button bt_ok;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pickinsurancekind);
         setTitle();
+        initView();
+        setOnClickListener();
+    }
+
+    private void setOnClickListener() {
+        bt_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+    private void initView() {
+        bt_ok = (Button) findViewById(R.id.bt_ok);
     }
 
     private void setTitle() {

@@ -16,10 +16,8 @@ import cn.org.prism.insurancemodule.widget.Title;
 public class MyInsuranceActivity extends Activity {
 
     private LinearLayout ll_myinsurance_buynow;
-    private LinearLayout ll_myinsurance_callme;
     private LinearLayout ll_myinsurance_editdata;
     private Button bt_buynow;
-    private Button bt_continuebuy;
     private Button bt_editdata;
     private Button bt_askprise;
 
@@ -34,12 +32,10 @@ public class MyInsuranceActivity extends Activity {
 
     private void initView() {
         ll_myinsurance_buynow = (LinearLayout) findViewById(R.id.ll_myinsurance_buynow);
-        ll_myinsurance_callme = (LinearLayout) findViewById(R.id.ll_myinsurance_callme);
         ll_myinsurance_editdata = (LinearLayout) findViewById(R.id.ll_myinsurance_editdata);
         bt_buynow = (Button) findViewById(R.id.bt_buynow);
         bt_editdata = (Button) findViewById(R.id.bt_editdata);
         bt_askprise = (Button) findViewById(R.id.bt_askprise);
-        bt_continuebuy = (Button) findViewById(R.id.bt_continuebuy);
     }
 
     private void setOnClickListener() {
@@ -71,41 +67,11 @@ public class MyInsuranceActivity extends Activity {
                 startActivity(intent);
             }
         });
-        bt_continuebuy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new RouteManDialog.Builder(MyInsuranceActivity.this)
-                        .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE_SUBMIT_SUCCESS)
-                        .setPositiveButton(getString(R.string.button_ok), new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        })
-                        .create()
-                        .show();
-            }
-        });
         bt_askprise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MyInsuranceActivity.this, AskPriseActivity.class);
                 startActivity(intent);
-            }
-        });
-        ll_myinsurance_callme.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new RouteManDialog.Builder(MyInsuranceActivity.this)
-                        .setTheme(RouteManDialog.DialogTheme.THEME_INSURANCE_PAY_SUCCESS)
-                        .setPositiveButton(getString(R.string.lookup_fund), new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        })
-                        .create()
-                        .show();
             }
         });
     }
